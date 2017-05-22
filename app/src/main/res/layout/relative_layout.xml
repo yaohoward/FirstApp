@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+       2017/5/21
+       RelativeLayout: 只能相对父容器和另一个组件, 默认左上角为原点,而且支持重叠
+          1: layout_centerInParent 可以在父容器的中央
+          2: layout_alignLeft 左对齐   layout_toLeftOf：在某个元素左边
+   -->
+
+    <Button
+        android:id="@+id/btn_center"
+        android:layout_centerInParent="true"
+        android:text="中心"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="中上"
+        android:layout_alignLeft="@id/btn_center"
+        android:layout_above="@id/btn_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="中下"
+        android:layout_alignLeft="@id/btn_center"
+        android:layout_below="@id/btn_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="中左"
+        android:layout_alignTop="@id/btn_center"
+        android:layout_toLeftOf="@id/btn_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="中右"
+        android:layout_alignTop="@id/btn_center"
+        android:layout_toRightOf="@id/btn_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="右上"
+        android:layout_above="@id/btn_center"
+        android:layout_toRightOf="@id/btn_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="右下"
+        android:layout_below="@id/btn_center"
+        android:layout_toRightOf="@id/btn_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="左上"
+        android:layout_above="@id/btn_center"
+        android:layout_toLeftOf="@id/btn_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="左下"
+        android:layout_below="@id/btn_center"
+        android:layout_toLeftOf="@id/btn_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

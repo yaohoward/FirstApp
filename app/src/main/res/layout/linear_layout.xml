@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--
+           2017/5/21
+           LinearLayout: 线性布局, 此布局不支持重叠,也不支持换行 最大优点支持屏幕平均分配
+             组件平均分布:  android:layout_width="0dp"  android:layout_weight="1" : layout_weight 本质分配剩余空间
+             如果是水平排序: 则只能垂直 上  中 下   通过属性: layout_gravity
+       -->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#993333"
+            android:gravity="center_horizontal"
+            android:text="#993333"/>TextView
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#336633"
+            android:gravity="center"
+            android:text="#336633"/>TextView
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#99cc00"
+            android:gravity="center_horizontal|bottom"
+            android:text="#99cc00"/>TextView
+
+
+    </LinearLayout>Layout
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#cc9966"
+            android:gravity="center_vertical"
+            android:text="#cc9966"/>TextView
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#CC0"
+            android:gravity="center"
+            android:text="#CCCC00"/>TextView
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FC9"
+            android:gravity="center_vertical|right"
+            android:text="#FFCC99"/>TextView
+
+
+
+    </LinearLayout>Layout
+
+
+
+</LinearLayout>
